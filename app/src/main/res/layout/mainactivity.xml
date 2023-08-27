@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#408BC34A"
+    android:gravity="bottom|center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/totalTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="435dp"
+        android:contentDescription="@string/app_name">
+
+        <LinearLayout
+            android:id="@+id/cardContainer"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:gravity="top|center"
+            android:orientation="vertical">
+
+            <!-- created card views will be nested in cardContainer LinearLayout -->
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
+
+    <EditText
+        android:id="@+id/inputText1"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:hint="@string/for_input_txt_1"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/inputText2"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:hint="@string/for_input_txt_2"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:text="@string/for_add_task_btn"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="normal"
+        tools:ignore="VisualLintButtonSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/btn2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8BC34A"
+            android:text="@string/for_reset_all_btn"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/btn3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8BC34A"
+            android:text="@string/for_refresh_btn"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            tools:ignore="VisualLintButtonSize" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+</LinearLayout>

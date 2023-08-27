@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">KeepCred</string>
+    <string name="for_input_txt_1">Title:</string>
+    <string name="for_input_txt_2">Description:</string>
+    <string name="for_add_task_btn">add cred</string>
+    <string name="for_reset_all_btn">reset all</string>
+    <string name="for_task_done_btn">remove</string>
+    <string name="for_back_to_list_btn">return</string>
+    <string name="edit_title_desc">edit cred</string>
+    <string name="for_refresh_btn">refresh</string>
+    <string name="for_prioritization_btn">push top</string>
+    <string name="for_password">enter</string>
+    <string name="for_password_input">Passcode:</string>
+    <string name="side_view_smiley">=)</string>
+</resources>

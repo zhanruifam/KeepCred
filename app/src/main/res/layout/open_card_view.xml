@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#408BC34A"
+    android:gravity="bottom|center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="#804CAF50"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <!-- ad view -->
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/side_view_smiley"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <!--com.google.android.gms.ads.AdView
+        android:id="@+id/adView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" /-->
+
+    <!--com.google.android.gms.ads.AdView
+        android:id="@+id/adView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" /-->
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:id="@+id/cardtaskid"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="110dp">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cardtasktitle"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <ScrollView
+        android:layout_width="300dp"
+        android:layout_height="150dp">
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/cardtaskdesc"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textIsSelectable="true"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp" />
+
+    <EditText
+        android:id="@+id/titleEdit"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:hint="@string/for_input_txt_1"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <EditText
+        android:id="@+id/descEdit"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:autofillHints=""
+        android:hint="@string/for_input_txt_2"
+        android:minHeight="48dp"
+        tools:ignore="VisualLintTextFieldSize" />
+
+    <Button
+        android:id="@+id/edit"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#8BC34A"
+        android:text="@string/edit_title_desc"
+        android:textAllCaps="true"
+        android:textSize="24sp"
+        tools:ignore="VisualLintButtonSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/priority"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8BC34A"
+            android:text="@string/for_prioritization_btn"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <Button
+            android:id="@+id/finishTask"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8BC34A"
+            android:text="@string/for_back_to_list_btn"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            tools:ignore="VisualLintButtonSize" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="25dp" />
+
+</LinearLayout>
